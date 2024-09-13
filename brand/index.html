@@ -29,17 +29,18 @@
   
   <script>
   //source: https://stackoverflow.com/questions/18480550/
-  var folder = "img";
-  $.ajax({
-      url : folder,
-      success: function (data) {
-          $(data).find("a").attr("href", function (i, val) {
-              if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-                  $("body").append( "<div class='thumb'>" + "<img src='"+ val +"' alt='"+ val +"'>" + "<p>"+ val +"</p>" + "</div>" );
-              } 
-          });
-      }
-  });
+//   var folder = "img";
+//   $.ajax({
+//       url : folder,
+//       success: function (data) {
+//           $(data).find("a").attr("href", function (i, val) {
+//               if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+//                   $("body").append( "<div class='thumb'>" + "<img src='"+ val +"' alt='"+ val +"'>" + "<p>"+ val +"</p>" + "</div>" );
+//               } 
+//           });
+//       }
+//   });
+
   </script> 
 
 </head>
