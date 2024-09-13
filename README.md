@@ -1,7 +1,10 @@
 # Gsite
 
-Este repositoria funciona como una carpeta de almacenamiento de archivos multimedia para ser usados en sitios web.
-Tiene activa la función de Git LFS para optimizar el tamaño del repositorio.
+Este repositorio funciona como un servicio de almacenamiento de archivos multimedia para un sitio web de Google Sites.
+
+Las imágenes que se exportan y alojan en este repo están disponibles en el siguiente archivo:
+
+https://www.figma.com/design/K2vFW7TO64K6PUExVrXapU/Swanix-Brand-Gsite
 
 
 ```sh
@@ -21,11 +24,7 @@ gsite/  # Carpeta raíz
 │       
 ├── LICENSE         # Licencia
 ├── README.md       # Archivo LEAME inicial
-├── gulpfile.js     # Tareas de Gulp
 └── package.json    # Dependencias de Node.js
 │
 └---------------------------------------------------------
 ```
-
-Tutorial de Git LFS: 
-https://github.com/sebastianserna/git-lfs-files
