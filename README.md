@@ -1,5 +1,9 @@
 # Gsite
 
+Este repositoria funciona como una carpeta de almacenamiento de archivos multimedia para ser usados en sitios web.
+Tiene activa la función de Git LFS para optimizar el tamaño del repositorio.
+
+
 ```sh
 gsite/  # Carpeta raíz
 │
@@ -22,3 +26,6 @@ gsite/  # Carpeta raíz
 │
 └---------------------------------------------------------
 ```
+
+Tutorial de Git LFS: 
+https://github.com/sebastianserna/git-lfs-files
