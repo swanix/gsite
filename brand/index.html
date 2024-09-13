@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Swanix Brand</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <meta property="og:title" content="Alegra Design" />
+  <meta property="og:image" content="https://swanix.org/gsite/brand/img/logo-light.jpg" />
+  <meta property="og:image:secure_url" content="https://swanix.org/gsite/brand/img/logo-light.jpg" /> 
+  <meta property="og:description" content="Experimental design system" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <style>
+  body {
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+    color: grey;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+  }
+  img {
+    width: 200px;
+    height:auto;
+  }
+
+  </style>
+  
+  <script>
+  //source: https://stackoverflow.com/questions/18480550/
+  var folder = "img";
+  $.ajax({
+      url : folder,
+      success: function (data) {
+          $(data).find("a").attr("href", function (i, val) {
+              if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+                  $("body").append( "<div class='thumb'>" + "<img src='"+ val +"' alt='"+ val +"'>" + "<p>"+ val +"</p>" + "</div>" );
+              } 
+          });
+      }
+  });
+  </script> 
+
+</head>
+
+<body>
+
+
+  
+</body>
+
+</html>
